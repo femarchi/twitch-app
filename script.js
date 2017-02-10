@@ -19,21 +19,14 @@ $(document).ready(function() {
 					type:'GET',
 					dataType: 'jsonp',
 					url: channelRequestUrl,
-					success: function(result){
-						//console.log('user data request successful');
-					}
+					success: function(result){}
 				}),
 				$.ajax({
 					type:'GET',
 					dataType: 'jsonp',
 					url: streamRequestUrl,
-					success: function(result){
-						//console.log('stream data request successful');
-					}
+					success: function(result){}
 				})).done(function(channelData, streamData){
-					// console.log('user: ' + userData[0].name + 
-					// 						'\n logo: ' + userData[0].logo +
-					// 						'\n stream ' + streamData[0].stream);
 					dataArray.push({
 						name:user,
 						logo:channelData[0].logo,
@@ -117,7 +110,6 @@ $(document).ready(function() {
 					}
 				});
 				break;
-
 		}
 
 	}
@@ -148,7 +140,6 @@ $(document).ready(function() {
 
 		document.getElementById('player-list').appendChild(clonedTemplate);
 	}
-
 
 }); //end of $(document).ready();
 
