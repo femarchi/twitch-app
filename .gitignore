@@ -1,0 +1,7 @@
+# Sublime Project Files
+
+*.sublime-project
+*.sublime-workspace
+streamExample.json
+
+# Folders
